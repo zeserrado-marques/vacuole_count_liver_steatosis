@@ -31,7 +31,7 @@ for (i = 0; i < lengthOf(list_files); i++) {
 function processFile(output, pixel_width, pixel_height, unit) { 
 	// process opened file. put here your desired workflow
 
-	// variables
+	// variables inside the function
 	getDimensions(width, height, channels, slices, frames);
 	channels = channels;
 	bit_depth = bitDepth();
