@@ -1,6 +1,6 @@
 ## Vacuole Count Liver Steatosis
 
-Macro that counts vacuoles, counts vacuoles in fatty liver tissue, measures their shape descriptors, individual and total area. Returns a table with said measurements and ROIs zip for post-analysis.
+Macro that counts vacuoles in fatty liver tissue, measures their shape descriptors, individual and total area. Returns a table with said measurements and ROIs zip for post-analysis.
 
 Saturation and size threshold values and logit function retrieved from https://doi.org/10.1002/cyto.b.21790  
 Please cite the paper if you use these macros.
