@@ -30,3 +30,8 @@ After running _step1_:
 7. Wait a bit. Weka is not the fastest plugin
 
 8. After prediction, run _step2_ macro
+
+#### Update Log
+
+##### 2020/07/06
+- Introduced a maximum vacuole area size.

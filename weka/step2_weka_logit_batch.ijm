@@ -14,16 +14,20 @@
  * Date: 2021/03
  * 
  */
+
+// initialize
 print("\\Clear");
-// set measurements
 run("Set Measurements...", "area shape redirect=None decimal=3");
 
-start_time = getTime();
-print("Batch processing images");
+// variables
+max_vacuole_size = 500;
 
 // paths
 input = getDir("folder with images to be predicted");
 list_files = getFileList(input);
+
+start_time = getTime();
+print("Batch processing images");
 
 setBatchMode("hide");
 for (i = 0; i < lengthOf(list_files); i++) {
@@ -75,7 +79,7 @@ function processFile(input) {
 	run("Watershed");
 	
 	// Analyze particles and extract ROIs
-	run("Analyze Particles...", "size=2-25000 circularity=0.2-1.00 show=Masks display clear add");
+	run("Analyze Particles...", "size=2-" + max_vacuole_size + " circularity=0.2-1.00 show=Masks display clear add");
 	selectWindow(img);
 	
 	// roimanager and table settings
