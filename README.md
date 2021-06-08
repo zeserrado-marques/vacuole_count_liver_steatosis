@@ -10,10 +10,10 @@ These macros were developed for H&E stain liver tissue samples.
 ### How to run
 There are two ways to segment the images. Either using the saturation channel or Trainable Weka Segmentation. Download the macro code of which version you prefer to run.
 
-##### Saturation
+#### Saturation
 Open and run _step1_ and _step2_ macros like any another Fiji macro.
 
-##### Weka
+#### Weka
 After running _step1_:
 1. Open an image on Weka
 
@@ -31,7 +31,9 @@ After running _step1_:
 
 8. After prediction, run _step2_ macro
 
-#### Update Log
+If you use Weka Segmentation, please cite its paper https://doi.org/10.1093/bioinformatics/btx180
+
+### Update Log
 
 ##### 2020/07/06
 - Introduced a maximum vacuole area size.
