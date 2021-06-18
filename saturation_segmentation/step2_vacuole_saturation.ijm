@@ -157,7 +157,7 @@ function logit_func(size, circ, roundness, solidity) {
 	// uses the logit function from the paper
 	// returns true (1) or false (0)
 	value = -16.2 + (0.00272 * size) + (5.81 * circ) + (7.054 * roundness) + (10.3 * solidity);
-	if (log(value) >= 0.5 && size >= 25) {
+	if (log(value) >= 0.5) {
 		return true
 	} else {
 		return false

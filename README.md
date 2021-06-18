@@ -35,5 +35,8 @@ If you use Weka Segmentation, please cite its paper https://doi.org/10.1093/bioi
 
 ### Update Log
 
-##### 2020/07/06
+##### 2021/06/07
 - Introduced a maximum vacuole area size.
+
+##### 2021/07/18
+- Removed minimum vacuole area size.
