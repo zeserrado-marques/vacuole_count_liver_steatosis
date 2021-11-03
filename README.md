@@ -15,21 +15,17 @@ Open and run _step1_ and _step2_ macros like any another Fiji macro.
 
 #### Weka
 After running _step1_:
-1. Open an image on Weka
+1. Open the _weka_batch_process.ijm_ file.
 
-2. Click "Load Classifier"
+2. Run the file and follow its instructions.
 
-3. Open the vacuoles.model file (or another classifier that you trained)
+3. If you have a lot of images, this might take a while.
 
-4. Then click "Apply Classifier"
+4. Saves predicted images in a folder called "Weka_predicted_files".
 
-5. Select image files to be predicted/segmented
+5. Run _step2_ macro on the "Weka_predicted_files" folder.
 
-6. If they're more than 3, save them in a folder (e.g. create a folder called "classified" and save the predicted images there)
-
-7. Wait a bit. Weka is not the fastest plugin
-
-8. After prediction, run _step2_ macro
+If you never used Weka, please read the documentation on what it is and how to use it - https://imagej.net/plugins/tws/
 
 If you use Weka Segmentation, please cite its paper https://doi.org/10.1093/bioinformatics/btx180
 
@@ -40,3 +36,6 @@ If you use Weka Segmentation, please cite its paper https://doi.org/10.1093/bioi
 
 ##### 2021/07/18
 - Removed minimum vacuole area size.
+
+##### 2021/11/03
+- Added _weka_batch_process.ijm_.
